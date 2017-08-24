@@ -4,28 +4,33 @@ body{
     -webkit-font-smoothing: antialiased;
 }
 
-.content{
-    padding-top: 65px;
-    text-align: center; 
-    width: 300px;
+.painelLogin{
+    width: 80%;
+    text-align: center;
     margin: 0 auto;
 }
 
-.form-group{
-    margin-top: 25px;
-    
-    font-family: 'Roboto', sans-serif;
+.painelLogin__img{
+    margin-top: 65px;
 }
 
-.form-group input{
+.formLogin--group{
+    margin-top: 40px;
+}
+
+.formLogin__label--oculto{
+    display: none;
+}
+
+.formLogin__input{
     width: 100%;
-    font-size: 18px;
-    font-weight: 300;
-    
-    background-color: transparent;
-    
     border: none;
     border-bottom: 1px solid #fff;
+    
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 300;
+    background-color: transparent;;
     color: #fff;
 }
 
@@ -34,29 +39,31 @@ body{
    color: #fff;
 }
 
-.form-group .btn{
+.formLogin__button{
     width: 100%;
     height: 50px;
-    border-radius: 40px;
-    border: none;
     margin-bottom: 6px;
+    border: none;
+    border-radius: 40px;
     
-    background-color: #fff;
-    color: #888888;
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
-    box-shadow:  0px 2px 3px rgba(0,0,0,0.5);
+    background-color: #fff;
+    color: #39393a;
     
     cursor: pointer;
 }
 
-a{
-    color: #fff;
+.painelLogin__link{
+    font-family: 'Roboto';  
+    font-size: 14px;
+    font-weight: 400;
     text-decoration: none;
     text-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+    color: #fff;
 }
 
-.ocultar{
-    font-size: 0;
+.painelLogin__link:hover{
+    text-decoration: underline;
 }
