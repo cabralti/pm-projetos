@@ -8,9 +8,10 @@ h1{
 }
 
 h2{
+    text-align: center;
     text-transform: uppercase;
     font-size: 18px;
-    text-align: center;
+    color: #666;
 }
 
 ul{
@@ -24,4 +25,13 @@ ul li{
     margin-bottom: 12px;
     background-color:  #9b59b6;
     color: #fff;
+}
+
+.link-voltar{
+    color: #000;
+    text-decoration: none;
+}
+
+.link-voltar:hover{
+    text-decoration: underline;
 }
