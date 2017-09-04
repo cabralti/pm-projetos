@@ -1,24 +1,26 @@
 body{
+    padding: 45px;
     background-color: #9b9b9b;
     font-family: 'Roboto', sans-serif;
 }
 .container{
-    margin: 90px;
     border-radius: 3px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-}
-h2{
-    padding-left: 15px;
-    padding-top: 20px;
-    font-size: 20px;
-    font-weight: 500;
 }
 
 /* Table */
 .tblRelatorio{
     width: 100%;
     border-spacing: 0;
+}
+.tblRelatorio caption{
+    padding: 20px;
+    border-radius: 3px 3px 0px 0px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    background-color: #fff;
 }
 
 /* tHead */
@@ -37,8 +39,13 @@ h2{
     background-color: #eee;
 }
 .tblRelatorio thead tr th, .tblRelatorio tbody tr td{
-   padding: 15px 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #e1e1e1; 
+}
+ thead th:first-child, tbody td:first-child{
+     width: 80px;
+     text-align: center;
 }
 
 /* tFoot */
@@ -57,9 +64,4 @@ h2{
 }
 .tblRelatorio tfoot tr td span, .tblRelatorio tfoot tr td a{
     margin-left: 38px;
-}
-
-/* Ocultar */
-.ocultar{
-    display: none;
 }
