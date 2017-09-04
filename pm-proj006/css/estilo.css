@@ -1,0 +1,38 @@
+body{
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    
+    -webkit-font-smoothing: antialiased;
+}
+
+.logo{
+    margin: 25px auto;
+}
+.container{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.card{
+   width: 100%;
+}
+.card__img{
+   width: 100%;
+}
+.card__titulo{
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    text-transform: uppercase;
+    color: #4a4a4a;
+}
+
+@media (min-width: 575px) {
+  .card {
+      width: 300px;
+      margin-left: 20px;
+      display: inline-block;
+  }
+}
