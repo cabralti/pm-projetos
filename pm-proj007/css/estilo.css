@@ -3,157 +3,34 @@ body{
      -webkit-font-smoothing: antialiased;
 }
 
-.header{
-    background: url(../img/fundo-header.png) no-repeat;
-    padding: 20px;
-}
+
+/*
+|------------------------------------------
+| .CONTAINER
+|------------------------------------------
+*/
 .container{
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
-}
-
-.header__h1{
-    background-image: url(../img/logomarca.png);
-    background-repeat: no-repeat;
-    background-size: 150px;
-    font-size: 60px;
-    float: left;
-    margin: 0 180px 0 0;
-}
-.header__span{
-    visibility: hidden;
-}
-
-.header__menu{
-    float: left;
-    font-size: 20px;
-    font-weight: 300;
-    font-family: 'Lato', sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-.header__menu ul{
-    list-style: none;
-}
-.header__menu ul li{
-    margin-right: 85px;
-    float: left;
-}
-.header__menu ul li a{
-    text-decoration: none;
-    color: #fff;
-}
-.header__link{
-    border: 1px solid #ffffff;
-    padding: 10px 30px;;
-    border-radius: 3px;
-}
-
-
-
-.content{
-    width: 460px;
-}
-.content__titulo{
-    margin: 0;
-    padding: 0 0 7px 0;
-}
-.content__descricao{
-     margin: 0;
-}
-
-
-
-.content-topo{
-    text-align: center;
-}
-.content__titulo-topo{
-    font-size: 50px;
-    font-weight: 400;
-    color: #fff;
-}
-.content__descricao-topo{
-    font-size: 36px;
-    font-weight: 300;
-    color: #fff;
-}
-
-
-.content-conheca{
-    float: right;
-    padding: 50px 0;
-}
-.content__titulo-conheca{
-    font-size: 36px;
-    font-weight: 400;
-    color: #000;
-}
-.content__descricao-conheca{
-    font-size: 24px;
-    font-weight: 300;
-    color: #000;
-}
-
-
-
-.descricao-depoimento{
-    font-size: 24px;
-    font-weight: 300;
-}
-.descricao-depoimento strong{
-    font-weight: 700;
-}
-
-
-.content-convite{
-    width: 640px;
-    margin: 0 auto;
-    padding: 10px 5px 10px 25px;;
-    border-radius: 3px;
-   /* background-color: rgba(255, 255, 255, 0.8);*/
-    background-color: #fff;
-    opacity: 0.89;
-}
-.content-convite label{
-   display: none;
-}
-.content-convite input{
-    margin: 0;
-    padding: 40px 0px;
-    width: 80%;
-    border: none;
     
-    font-size: 24px;
-    font-weight: 400;
-    background-color: transparent;
-    color: #4d4d4d;
-}
-.content-convite button{
-    border: none;
-    background-color: transparent;
-    background-image: url(../img/btn-enviar.png);
-    background-repeat: no-repeat;
-    background-size: 70px;
-}
-.content-convite button:hover{
-    cursor: pointer;
-}
-.content-convite button span{
-    font-size: 30px;
-    visibility: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 
 
-
-/*-- Botão --*/
+/*
+|------------------------------------------
+| .BTN - BOTÃO
+|------------------------------------------
+*/
 .btn{
-    margin-top: 20px;
     display: block;
     padding-top: 15px;
     padding-bottom: 15px;
     border: none;
     border-radius: 3px;
     box-shadow: 0 6px 0 #a32751;
-     font-weight: 300;
+    font-weight: 300;
     text-align: center;
     text-decoration: none;
      
@@ -161,43 +38,238 @@ body{
     color: #fff;
 }
 .btn-topo{
-    width: 460px;
     font-size: 36px;
 }
 .btn-conheca{
-    width: 300px;
+    width: 60%;
     font-size: 30px;
 }
 
-/*-- Sessões --*/
+
+/*
+|------------------------------------------
+| HEADER
+|------------------------------------------
+*/
+header{
+    margin-bottom: -90px;
+}
+header h1{
+    margin: 0;
+    margin-top: 10px;
+    background-image: url(../img/logomarca.png);
+    background-repeat: no-repeat; 
+    width: 177px;
+    height: 78px;
+}
+header h1 span{
+    visibility: hidden;
+}
+header nav ul{
+    margin: 0;
+    margin-top: 20px;
+    padding-right: 80px;
+}
+header nav li{
+    margin-right: 80px;
+    list-style: none;
+    display: inline-block;
+}
+header nav li:last-child{
+    padding: 10px 30px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+header nav li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*
+|------------------------------------------
+| SESSÃO TOPO
+|------------------------------------------
+*/
 #topo{
-    padding-top: 225px;
-    padding-bottom: 375px;
+    height: 700px;
+    background-image: url(../img/fundo-header.png);
     
+    /* Redimensiona de acordo com o elemento */
+    background-size: cover;
 }
-#conheca{
-    padding-top: 80px;
-    padding-bottom: 80px;
-    border-bottom: 3px solid #511099;
-}
-#depoimento{
-    padding-top: 80px;
-    padding-bottom: 80px;
+#topo .content{
+    margin-top: 200px;
     text-align: center;
+    color: #fff;
+}
+#topo .content h2{
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: 700;
+}
+#topo .content p{
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+
+
+/*
+|------------------------------------------
+| SESSÃO CONHECA
+|------------------------------------------
+*/
+#conheca{
+    padding: 70px;
+    border-bottom: 4px solid #511099;
+}
+#conheca .content{
+    padding: 30px 70px;
+}
+#conheca .content h2{
+    font-size: 36px;
+}
+#conheca .content p{
+    font-size: 24px;
+}
+
+
+
+/*
+|------------------------------------------
+| SESSÃO DEPOIMENTO
+|------------------------------------------
+*/
+#depoimento{
+    padding: 70px;
     background-color: #ebe7fb;
 }
+#depoimento .container{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#depoimento .container img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+#depoimento .container p{
+    width: 75%;
+   font-size: 24px;
+    margin: 0;
+}
+
+
+/*
+|------------------------------------------
+| SESSÃO CONVITE
+|------------------------------------------
+*/
 #convite{
     padding-top: 150px;
     padding-bottom: 150px;
-    border-bottom: 3px solid #fff;
-    background: url(../img/fundo-convite.png);
+    border-bottom: 4px solid #fff;
+    background-image: url(../img/fundo-convite.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#convite .container{
+    flex-direction: column;
+    align-items: center;
+}
+#convite form{
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    border-radius: 3px;
+    background-color: rgba(255,255,255,0.9);
+}
+#convite form label{
+    display: none;
+}
+#convite form input{
+    width: 70%;
+    padding: 30px;
+    border: none;
+    background-color: transparent;
+}
+#convite form button{
+    width: 95px;
+    height: 43px;
+    margin-top: 15px;
+    margin-right: 20px;
+    border:none;
+    background-image: url(../img/btn-enviar.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+#convite form button:hover{
+    cursor: pointer;
+}
+#convite form span{
+    visibility: hidden;
 }
 
+
+
+/*
+|------------------------------------------
+| FOOTER
+|------------------------------------------
+*/
 footer{
-    padding: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-size: 18px;
     font-weight: 300;
-    text-align: center;
     background-color: #2a0157;
     color: #fff;
+}
+footer .container{
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*
+|------------------------------------------
+| MEDIAS QUERIES
+|------------------------------------------
+*/
+@media (max-width: 600px){
+    header nav{
+        display: none;
+    }
+    header h1{
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    
+    #topo{
+        padding: 20px;
+    }
+    
+    #conheca .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    #conheca .container .content{
+        padding: 10px;
+    }
+    
+    .btn{
+        width: 100%;
+    }
+    
+    #convite form{
+        width: 70%;
+        display: block;
+        text-align: center;
+    }
 }
