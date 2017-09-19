@@ -1,0 +1,193 @@
+body{
+    font-family: 'Arial', sans-serif;
+    display: flex;
+}
+
+
+
+/*
+|-------------------------------------------
+| SIDEBAR
+|-------------------------------------------
+*/
+#sidebar{
+    width: 200px;
+    background-color: #242536;
+}
+#sidebar h1{
+    margin: 0;
+    height: 60px;
+    background-image: url(../img/logomarca.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #151524;
+}
+#sidebar h1 span{
+    visibility: hidden;
+}
+#sidebar nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#sidebar ul li{
+    padding: 18px;
+    font-size: 14px;
+    font-weight: 700;
+}
+#sidebar ul li:hover{
+    padding-left: 14px;
+    border-left: 4px solid #ffb946;
+    background-color: #151524;
+}
+#sidebar ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+#sidebar ul li a span{
+    margin-right: 8px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+}
+#sidebar ul li a small{
+    float: right;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/*
+|-------------------------------------------
+| SECTION #PRINCIPAL
+|-------------------------------------------
+*/
+#principal{
+    width: 100%;
+}
+#principal header{
+    height: 60px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    
+    justify-content: flex-end;
+    background-color: #151524;
+}
+#principal header a{
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+#abas{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #fff;
+}
+#abas ul{
+    margin: 0;
+    list-style: none;
+}
+#abas ul li{
+    margin: 0;
+    display: inline;
+    margin-right: 40px;
+}
+#abas ul li a{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #161616;
+}
+#abas ul li a:hover{
+    border-bottom: 3px solid #ffba45;
+    color: #ffba45
+}
+
+.container{
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+
+/*
+|-------------------------------------------
+| SECTION #PRINCIPAL - FORMULÁRIO
+|-------------------------------------------
+*/
+form{
+    padding: 30px;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px;
+    background-color: #fff;
+}
+form fieldset{
+    width: 430px;
+    padding: 0;
+    margin-bottom: 40px;
+    border: none;
+}
+form fieldset legend{
+    font-size: 20px;
+    font-weight: 700;
+    color: #161616;
+}
+
+.check{
+    background-image: url(../img/check.png);
+    background-repeat: no-repeat;
+    background-position: top 12px right;
+}
+
+form input, form select{
+    width: 400px;
+    display: block;
+    
+    /* Corrige o tamanho dos elementos: input, select... */
+    box-sizing: border-box;
+    
+    margin-top: 10px;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-bottom: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+
+form label{
+    display: block;
+    align-items: center;
+    font-size: 14px;
+    
+}
+form input[type = "checkbox"]{
+    display: inline;
+    width: 16px;
+    height: 16px;
+}
+
+::-webkit-input-placeholder{
+    color: #c5c5c5;
+}
+
+form button{
+    width: 400px;
+    height: 40px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #3aca60;
+}
+form button:hover{
+    cursor: pointer;
+}
+    
+

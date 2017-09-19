@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+       <!-- METAS -->
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+       
+       <!-- TITLE -->
+       <title>Dashboard | Projeto 008</title>
+       
+       <!-- CSS -->
+       <link rel="stylesheet" href="css/normalize.css"/>
+       <link rel="stylesheet" href="css/estilo.css"/>
+       <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+       
+       <!-- FONT -->
+       <link href="https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet">
+    </head>
+    <body>
+      
+      <aside id="sidebar">
+          <h1><span>Nucliot</span></h1>
+          <nav>
+              <ul>
+                  <li><a href=""><span class="fa fa-usd"></span> Balance <small>$ 322</small></a></li>
+                  <li><a href=""><span class="fa fa-area-chart"></span> Dashboard</a></li>
+                  <li><a href=""><span class="fa fa-signal"></span> Base Stations <small>12</small></a></li>
+                  <li><a href=""><span class="fa fa-cube"></span> My Projects <small>4</small></a></li>
+                  <li><a href=""><span class="fa fa-cog"></span> Settings</a></li>
+              </ul>
+          </nav>
+      </aside>
+      
+      <section id="principal">
+           <header>
+               <a href="">
+                   <img src="img/avatar.png" alt=""/>
+               </a>
+           </header>
+           <div id="abas">
+               <ul>
+                   <li><a href="#">ACCOUNT</a></li>
+                   <li><a href="#">BILLING</a></li>
+               </ul>
+           </div>
+           <div class="container">
+               <form action="">
+                  <fieldset>
+                      <legend>Personal information</legend>
+                       
+                       <div class="check">
+                           <input type="email" placeholder="E-mail" required/>
+                           <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nisl eget nunc molestie maximus.</small>
+                       </div>
+
+                       <input type="text" placeholder="First Name" required/>
+                       <input type="text" placeholder="Last Name" required/>
+                       <select name="" required>
+                          <option value="" disabled selected>Country</option>
+                          <option value="New Zealand">New Zealand</option>
+                       </select>
+                       <div class="check">
+                           <input type="tel" placeholder="Phone" required/>
+                       </div>
+                   </fieldset>
+                   
+                   <fieldset>
+                      <legend>Password</legend>
+                      <input type="password" placeholder="Password" required/>
+                      <input type="password" placeholder="New Password" required/>
+                      <input type="password" placeholder="New Password Again" required/>
+                   </fieldset>
+                   
+                    <fieldset>
+                      <legend>Anythings</legend>
+                      <label><input type="checkbox"/> Güncelleme ve yenilikleri mail olarak almak istiyorum.</label>
+                      <label><input type="checkbox"/> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras id nisl eget nunc molestie maximus.</label>
+                   </fieldset>
+                   
+                   <button>Save</button>               
+               </form>
+            </div>
+       </section>
+        
+    </body>
+</html>
