@@ -1,0 +1,255 @@
+@charset "UTF-8";
+
+/* 
+    Criado em: 25/04/2017, 22:46:28
+    Autor    : Gabriel Santos Cabral
+    Descrição: As classes e id's estão organizados em ordem alfabética após o RESET.
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+
+/*
+|-------------------------------------------------------------------------------
+| RESET
+|-------------------------------------------------------------------------------
+*/
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #fff;
+    color: #555;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #333;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+p {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+
+/*
+|-------------------------------------------------------------------------------
+| B
+|-------------------------------------------------------------------------------
+*/
+.btn-projetos{
+    border:none;
+    text-shadow: 0px 1px 0px #000;
+    background: linear-gradient(90deg, #24A8DC 10%, #003469 90%);
+    color: #fff;
+}
+.btn-projetos:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+/*
+|-------------------------------------------------------------------------------
+| C
+|-------------------------------------------------------------------------------
+*/
+#contato{
+    background-color: #f2f2f2;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+
+/*
+|-------------------------------------------------------------------------------
+| D
+|-------------------------------------------------------------------------------
+*/
+.descricao{
+    margin-bottom: 30px;
+}
+.descricao > hr{
+    border: none;
+    background: linear-gradient(90deg, #24A8DC 10%, #003469 90%);
+    margin-left: auto;
+    margin-right: auto;
+    height: 5px;
+    width: 50%;
+}
+
+
+
+/*
+|-------------------------------------------------------------------------------
+| F
+|-------------------------------------------------------------------------------
+*/
+#footer{
+    background-color: #333;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+#footer a{
+    color: #95a5a6;
+}
+#footer h3{
+    text-shadow: 1px 1px 1px #000;
+}
+#footer h3, #footer address{
+    color: #fff;
+}
+
+
+/*
+|-------------------------------------------------------------------------------
+| L
+|-------------------------------------------------------------------------------
+*/
+.lista-projetos{
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*
+|-------------------------------------------------------------------------------
+| M
+|-------------------------------------------------------------------------------
+*/
+.modal-header{
+    background: linear-gradient(90deg, #24A8DC 10% , #003469 90%);
+    border-radius: 2px 2px 0px 0px;
+}
+.modal-header h3{
+    color: #fff;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #000;
+}
+.modal-body img{
+     margin-bottom: 30px;
+}
+
+
+
+/*
+|-------------------------------------------------------------------------------
+| N
+|-------------------------------------------------------------------------------
+*/
+.navbar{
+    border-radius: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+.navbar-inverse{
+    background-color: #514A9D;
+    background: -webkit-linear-gradient(90deg, #24A8DC 10%, #003469 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(90deg, #24A8DC 10%, #003469 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(90deg, #24A8DC 10%, #003469 90%); /* IE10 */
+    background:      -o-linear-gradient(90deg, #24A8DC 10%, #003469 90%); /* Opera 11.10+ */
+    background:         linear-gradient(90deg, #24A8DC 10%, #003469 90%); /* W3C */
+    border-color: #1E96CA;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: #fff;
+    /*text-decoration: underline;*/
+}
+.navbar-inverse .navbar-nav > li > a:before {
+	content: '<';
+}
+.navbar-inverse .navbar-nav > li > a:after {
+	content: '>';
+}
+.navbar-inverse .navbar-nav > li > a:before, .navbar-inverse .navbar-nav > li > a:after {
+	opacity: 0;
+}
+.navbar-inverse .navbar-nav > li > a:hover:before, .navbar-inverse .navbar-nav > li > a:hover:after {
+	opacity: 1;
+}
+.navbar-brand{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.navbar-inverse .navbar-brand{
+    color:#fff;
+}
+.navbar-inverse .navbar-toggle{
+    border-color: transparent;
+}
+
+
+/*
+|-------------------------------------------------------------------------------
+| P
+|-------------------------------------------------------------------------------
+*/
+#portfolio{
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+#portfolio a img.img-responsive:hover{
+   -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+
+    border-radius: 5px;
+    z-index: 1;
+}
+
+
+/*
+|-------------------------------------------------------------------------------
+| S
+|-------------------------------------------------------------------------------
+*/
+#sobre{
+    background-color: #f2f2f2;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+#sobre h1{
+    font-size: 35px;
+    margin-bottom: 30px;
+    text-transform: inherit;
+}
+#sobre h2{
+   font-size: 22px;
+    margin-bottom: 35px;
+}
+#sobre img{
+    width: 180px;
+    height: 180px;
+    border: 2px solid #003469;
+}
+#sobre .icone{
+    color: #003469;
+}
+
+
+/*
+|-------------------------------------------------------------------------------
+| MOBILE
+|-------------------------------------------------------------------------------
+*/
+@media screen and (max-width: 768px) {
+    .navbar-brand{
+        font-size: 14px;
+    }
+}
+
+
