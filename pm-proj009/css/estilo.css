@@ -12,20 +12,22 @@ body{
 */
 .box{
     width: 680px;
-    margin: 25px auto;
+    margin: 10px auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.27);
 }
 
 .box__header{
     height: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     display: flex;
     align-items:center;
     justify-content: space-between;
     border-bottom: 1px solid #ebebeb;
     background-color: #fff;
-    color: #000;
+}
+.box__header-top{
+    display: flex;
 }
 .box__header h1{
     margin: 0;
@@ -33,31 +35,29 @@ body{
     margin-right: 10px;
     font-size: 18px;
     font-weight: bold;
+    color: #6e6f6f;
 }
 .box__header ul{
     margin: 0;
     padding: 0;
+    margin-left: 10px;
 }
 .box__header ul li{
     display: inline-block;
     list-style: none;
     font-size: 12px;
     font-weight: 400px;
+    color: rgba(0,0,0,0.5);
 }
 li.active{
     font-weight: bold;
 }
-.box__header ul li a{
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.5);
-}
 
 .close{
-    justify-content: flex-end;
-    text-decoration: none;
-    color: #777879;
-    font-weight: bold;
     margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #777879;
 }
 .close a{
    
@@ -80,7 +80,7 @@ li.active{
 }
 .box__carteira h2{
     margin: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 16px;
     font-weight: 700;
     color: #777879;
@@ -109,7 +109,7 @@ li.active{
 .box__carteira ul li small{
     font-size: 12px;
     font-weight: 400;
-    color: #777879;
+    color: #cbcbcb;
 }
 
 
@@ -161,39 +161,6 @@ li.active{
     font-size: 14px;
     color: #777879;
 }
-
-/*
-.form__input{
-    width: 270px;
-    height: 40px;
-    padding-left: 10px;
-    margin-bottom: 25px;
-    border: 1px solid #dedede;
-    border-radius: 2px;
-}
-.form__group{
-    margin: 0 auto;
-    width: 270px;
-    display: flex;
-   justify-content: center;
-}
-.form__input-ano{
-    width: 150px;
-    margin-right: 10px;
-}
-.form__input-cvc{
-    width: 95px;
-}
-.form__group-checkbox{
-    width: 270px;
-    text-align: left;
-}
-
-::-webkit-input-placeholder{
-    color: #c4cbd0;
-}
-*/
-
 ::-webkit-input-placeholder{
     color: #c4cbd0;
 }
@@ -205,7 +172,7 @@ li.active{
     border-radius: 3px;
     font-size: 16px;
     font-weight: bold;    
-    background-color: #8bd638;
+    background-color: #84d654;
     color: #fff;
 }
 .box__carteira form button:hover{
@@ -220,5 +187,80 @@ li.active{
 */
 .box__produtos{
     width: 300px;
+    padding: 25px 15px 25px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #ebebeb;
+}
+.box__produtos ul{
+    margin: 0;
+    padding: 0;
+}
+.box__produtos ul li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    list-style:none;
+    border-bottom: 1px solid #dddcdd;
+}
+.box__produtos ul li:last-child{
+    border: none;
+}
+
+.info__produtos{
+    padding-left: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.info__produtos h5{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #777879;
+}
+.info__produtos small{
+    margin-bottom: 3px;
+    display: block;
+    font-size: 10px;
+    font-weight: 200;
+    font-style: italic;
+    color: #4a4a4a;
+}
+.info__produtos .info__quantidade{
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    color: #9c9c9c;
+}
+.box__produtos ul li span{
+    font-size: 12px;
+    font-weight: 700;
+    color: #777879;
+}
+
+/* Tabela: Total da compra */
+.total table{
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    line-height:20px;
+    color: #777879;
+}
+.total table tr{
+    display: flex;
+    justify-content: space-between;
+}
+.total table tbody tr:first-child{
+    border-top: 1px solid #dddcdd;
+}
+.total table tbody tr:last-child{
+    border-bottom: 1px solid #dddcdd;
+}
+.total table tfoot tr{
+    font-weight: bold;
 }
