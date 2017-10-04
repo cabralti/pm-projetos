@@ -43,14 +43,13 @@ p {
 | B
 |-------------------------------------------------------------------------------
 */
-.btn-projetos{
-    border:none;
-    text-shadow: 0px 1px 0px #000;
-    background: linear-gradient(90deg, #24A8DC 10%, #003469 90%);
-    color: #fff;
-}
-.btn-projetos:hover{
-    text-decoration: underline;
+.btn-primary{
+   padding: 15px 30px;
+    border: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #777;
+    box-shadow: 0 4px 0 #003469;
     color: #fff;
 }
 
