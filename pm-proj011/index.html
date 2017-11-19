@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Calculadora IMC | Projeto 011</title>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
+</head>
+
+<body>
+    <div class="content content-altura">
+        <div class="container">
+            <label for="altura">Altura em Metros</label>
+            <input type="number" name="altura" id="altura" placeholder="1,75">
+        </div>
+    </div>
+
+    <div class="content content-peso">
+        <div class="container">
+            <label for="peso">Peso em Quilos</label>
+            <input type="number" name="peso" id="peso" placeholder="80" />
+        </div>
+    </div>
+
+    <div class="content content-imc">
+        <div class="container">
+            <button class="btn-imc">IMC</button>
+
+            <button class="btn-voltar">
+            <img src="img/seta-esquerda.png" alt=""/>
+            </button>
+
+            <div class="resultado">
+                <h1 class="valorIMC"></h1>
+                <p class="classificacao"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/calculoIMC.js"></script>
+</body>
+
+</html>
