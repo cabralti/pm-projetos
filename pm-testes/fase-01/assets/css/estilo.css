@@ -1,0 +1,479 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*
+|----------------------------------------
+| HEADER
+|----------------------------------------
+*/
+
+header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+header .container {
+    display: flex;
+}
+
+header .container h1 {
+    height: 48px;
+    width: 48px;
+    background-image: url(../img/logo-header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header .container h1 span {
+    visibility: hidden;
+}
+
+header .container nav {
+    width: 100%;
+}
+
+header .container ul {
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    font-size: 22px;
+}
+
+header .container ul li {
+    margin-left: 70px;
+    line-height: 2;
+    font-weight: 400;
+}
+
+header .container ul li a {
+    color: #fff;
+}
+
+header .container ul li a img {
+    width: 48px;
+    height: 48px;
+}
+
+
+
+/*
+|----------------------------------------
+| SECTION: .block-topo
+|----------------------------------------
+*/
+
+.block-topo {
+    margin-top: -130px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url(../img/hero-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.block-topo h2 {
+    font-size: 48px;
+}
+
+.block-topo p {
+    width: 50%;
+    margin: 25px auto;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.block-topo button {
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 22px;
+    font-weight: 400;
+    background-color: #fd6b72;
+}
+
+.block-topo button:hover {
+    color: #fff;
+}
+
+
+/*
+|----------------------------------------
+| SECTION: .block-fotos
+|----------------------------------------
+*/
+
+.block-fotos {
+    margin-top: -85px;
+    height: 500px;
+    padding: 0px 25px;
+    background: linear-gradient( to bottom, transparent, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)), url(../img/11-layers.png) top center no-repeat;
+}
+
+
+
+/*
+|----------------------------------------
+| SECTION: .block-video
+|----------------------------------------
+*/
+
+.block-video {
+    margin-top: -175px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #333;
+}
+
+.block-video h3 {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-size: 36px;
+    font-weight: 400;
+    color: #4c4c51;
+}
+
+.block-video p {
+    font-size: 22px;
+    font-weight: 400;
+    color: #88939e;
+}
+
+.block-video .block-degrade {
+    position: relative;
+    width: 100%;
+    height: 257px;
+}
+
+.block-video .block-degrade img {
+    position: absolute;
+    height: 257px;
+    top: 0;
+    left: 0;
+}
+
+.block-video .block-degrade .block-degrade__superior {
+    width: 463px;
+    height: 257px;
+    border-radius: 6px;
+    background: rgba(198, 80, 93, 0.6);
+    /*    background-image: linear-gradient(to left, #c6505d 0%, rgba(255, 255, 255, 0) 100%);*/
+    position: relative;
+}
+
+
+
+/*
+|----------------------------------------
+| SECTION: .block-numeros
+|----------------------------------------
+*/
+
+.block-numeros {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.block-numeros span {
+    font-family: 'Merriweather', serif;
+    font-size: 48px;
+    font-weight: 800;
+    color: #fe757b;
+}
+
+.block-numeros p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #88939e;
+}
+
+
+
+/*
+|----------------------------------------
+| SECTION: .block-angela
+|----------------------------------------
+*/
+
+.block-angela {
+    display: flex;
+    width: 100%;
+}
+
+.block-angela .card {
+    width: 50%;
+    height: 520px;
+    border-radius: 0 4px 4px 0;
+    background-color: #fd6e74;
+}
+
+.block-angela .container {
+    width: 50%;
+}
+
+.card-content {
+    padding: 25px;
+    text-align: right;
+}
+
+.card-content h4 {
+    width: 65%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 38px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.card-content a {
+    width: 98px;
+    height: 98px;
+    margin-top: -75px;
+    margin-left: -100px;
+    position: absolute;
+}
+
+.lista-anuncio {
+    margin: 0;
+    padding: 60px;
+    list-style: none;
+}
+
+.lista-anuncio li {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+}
+
+.lista-anuncio li:first-child {
+    margin-top: 0;
+}
+
+.lista-anuncio img {
+    margin-right: 40px;
+    width: 71px;
+    height: 71px;
+}
+
+.lista-anuncio__descricao {
+    width: 350px;
+}
+
+.lista-anuncio__descricao h5 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fb5c68;
+}
+
+.lista-anuncio__descricao p {
+    font-size: 22px;
+    font-weight: 400;
+    color: #88939e;
+}
+
+
+
+/*
+|----------------------------------------
+| SECTION: .block-cidade
+|----------------------------------------
+*/
+
+.block-cidade {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.block-cidade h3 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #4c4c51;
+}
+
+.block-cidade p {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #88939e;
+}
+
+.block-cidade .block-cidade__group {
+    width: 45%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.block-cidade .block-cidade__group select {
+    padding: 20px;
+    border-radius: 30px 30px 0 0;
+    border: 2px solid #dbdbdb;
+    border-bottom: 0;
+    font-size: 22px;
+    font-weight: 400;
+    color: #88939e;
+}
+
+.block-cidade .block-cidade__group button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 0 0 30px 30px;
+    font-size: 22px;
+    font-weight: 400;
+    background-color: #fd6b72;
+    color: #fff;
+}
+
+
+
+/*
+|----------------------------------------
+| FOOTER
+|----------------------------------------
+*/
+
+.footer {
+    padding-bottom: 40px;
+}
+
+.footer .row {
+    padding-bottom: 60px;
+}
+
+.footer .row .col-sm-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer select {
+    padding: 20px;
+    margin-bottom: 18px;
+    border-radius: 2px;
+    border: 2px solid #dbdbdb;
+    font-size: 22px;
+    font-weight: 400;
+    color: #75808c;
+}
+
+.footer h5 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #fb5c68;
+}
+
+.footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.footer ul li a {
+    color: #88939e;
+}
+
+.footer-list {
+    display: flex;
+    float: right;
+}
+
+.footer-list li {
+    margin-left: 35px;
+    font-size: 22px;
+    font-weight: 400;
+    color: #88939e;
+}
+
+
+
+/*
+|------------------------------------------
+| MEDIAS QUERIES
+|------------------------------------------
+*/
+
+@media (max-width: 580px) {
+    header {
+        padding: 0;
+    }
+    header .container {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+    header .container h1 {
+        margin: 0 auto;
+    }
+    header .container ul {
+        display: block;
+    }
+    header .container ul li {
+        padding: 0;
+        margin: 0;
+    }
+
+    .block-topo {
+        margin-top: -230px;
+        padding-top: 260px;
+    }
+
+    .lista-anuncio {
+        padding: 60px 0px;
+    }
+
+    .block-cidade .block-cidade__group {
+        width: 80%;
+    }
+
+    .footer-list {
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .block-angela {
+        display: block;
+    }
+    .block-angela .card {
+        width: 100%;
+        height: 500px;
+    }
+    .block-angela .container {
+        width: 100%;
+    }
+    .card-content a {
+        width: 80px;
+        margin-top: -65px;
+        margin-left: -75px;
+        position: absolute;
+    }
+}
