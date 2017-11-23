@@ -213,23 +213,20 @@ header .container ul li a img {
 
 .block-angela {
     display: flex;
-    width: 100%;
 }
 
 .block-angela .card {
     width: 50%;
-    height: 520px;
     border-radius: 0 4px 4px 0;
     background-color: #fd6e74;
 }
-
-.block-angela .container {
-    width: 50%;
+.block-angela .card img{
+    width: 100%;
 }
 
 .card-content {
-    padding: 25px;
     text-align: right;
+    padding: 25px;
 }
 
 .card-content h4 {
@@ -248,6 +245,11 @@ header .container ul li a img {
     margin-left: -100px;
     position: absolute;
 }
+
+.block-angela .container {
+    width: 50%;
+}
+
 
 .lista-anuncio {
     margin: 0;
@@ -465,15 +467,36 @@ header .container ul li a img {
     }
     .block-angela .card {
         width: 100%;
-        height: 500px;
     }
+    .block-angela .card .card-content{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .block-angela .card .card-content h4{
+        width: 80%;
+        font-size: 30px;
+    }
+    
     .block-angela .container {
         width: 100%;
     }
     .card-content a {
-        width: 80px;
-        margin-top: -65px;
+        width: 70px;
+        margin-top: -60px;
         margin-left: -75px;
         position: absolute;
+    }
+}
+
+@media (max-width: 1366px) {
+    .block-angela {
+        display: block;
+    }
+    .block-angela .card {
+        width: 100%;
+    }
+    .block-angela .card .card-content h4{
+        width: 65%;
+        font-size: 38px;
     }
 }
