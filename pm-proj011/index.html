@@ -1,50 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
+    <!-- METAS -->
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- TITLE -->
     <title>Calculadora IMC | Projeto 011</title>
 
-    <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700" rel="stylesheet">
-
     <!-- CSS -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/estilo.css" />
+    <link rel="stylesheet" href="assets/css/estilo.css" />
+
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
 </head>
 
 <body>
-    <div class="content content-altura">
-        <div class="container">
-            <label for="altura">Altura em Metros</label>
-            <input type="number" name="altura" id="altura" placeholder="1,75">
-        </div>
+    <div class="block block-altura">
+        <label class="block__label" for="altura">Altura em metros</label>
+        <input type="number" name="altura" id="altura" class="block__input" placeholder="1.72"/>
     </div>
-
-    <div class="content content-peso">
-        <div class="container">
-            <label for="peso">Peso em Quilos</label>
-            <input type="number" name="peso" id="peso" placeholder="80" />
-        </div>
+    <div class="block block-peso">
+        <label class="block__label" for="peso">Peso em quilos</label>
+        <input type="number" name="peso" id="peso" class="block__input" placeholder="75.4" /> <!--onkeypress="return SomenteNumero(event);"-->
     </div>
-
-    <div class="content content-imc">
-        <div class="container">
-            <button class="btn-imc">IMC</button>
-
-            <button class="btn-voltar">
-            <img src="img/seta-esquerda.png" alt=""/>
-            </button>
-
-            <div class="resultado">
-                <h1 class="valorIMC"></h1>
-                <p class="classificacao"></p>
+    <div class="block">
+        <button class="block__button">IMC</button>
+        <div class="block-resultado">
+            <button class="block__button-voltar"></button>
+            <!-- <a href="" class="block__button-voltar">
+                <img src="assets/img/seta-esquerda.png" class="block-hidden" alt="">
+            </a> -->
+            <div>
+                <h1 id="imc"></h1>
+                <p id="classificacao"></p>
             </div>
         </div>
     </div>
 
-    <script src="js/calculoIMC.js"></script>
+    <script src="assets/js/calculo-imc.js"></script>
 </body>
 
 </html>

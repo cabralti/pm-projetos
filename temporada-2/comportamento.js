@@ -24,9 +24,14 @@ function soma(n1, n2){
 }
 
 let resultado = soma(5, 3);
-console.log(resultado);*/
+console.log(resultado);
 
-
+let sub = (numA,  numB) => {
+    return numA - numB;
+}
+let result = sub(60, 20);
+console.log(result);
+*/
 
 /*
 |---------------------------------------
@@ -144,4 +149,50 @@ botao.addEventListener('click', function () {
 
     request.send();
 });
+*//*
+-------------------------------------------------
+let botao = document.querySelector('button');
+botao.innerHTML = 'Mudar cor';
+
+let h1 = document.querySelector('h1');
+h1.style.display = 'none';*/
+/*
+botao.addEventListener('mouseover', function(){
+    h1.style.opacity = 0.2;
+});
+
+botao.addEventListener('click', function(){
+    let cor = document.querySelector('#cor').value;
+    console.dir(cor.value);
+    document.querySelector('body').style.backgroundColor = cor;
+});
+-------------------------------------------------
 */
+let botao = document.querySelector('button');
+botao.addEventListener('click', function(){
+
+    let cep = document.querySelector('#cep').value;
+
+    //consumindo API
+    let api = `https://viacep.com.br/ws/${cep}/json/`;
+
+    let request = new XMLHttpRequest();
+
+    request.open('GET', api);
+
+    //Capturar a resposta da requisição
+    request.onload = function(){
+        let endereco = JSON.parse(request.responseText);
+
+        let logradouro = document.querySelector('#logradouro');
+        logradouro.innerHTML = endereco.logradouro;
+
+        let bairro = document.querySelector('#bairro');
+        bairro.innerHTML = endereco.bairro;
+
+        let localidade = document.querySelector('#localidade');
+        localidade.innerHTML = endereco.localidade;
+    };
+
+    request.send();
+});

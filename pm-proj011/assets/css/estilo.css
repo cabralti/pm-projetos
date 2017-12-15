@@ -1,0 +1,112 @@
+@charset 'UTF-8';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/*
+|------------------------------------------
+| Block
+|------------------------------------------
+*/
+.block{
+    height: 240px;
+    padding: 20px;
+}
+.block-hidden{
+   display: none !important;
+}
+.block-altura{
+    background-color: #3498db;
+}
+.block-peso{
+    background-color: #34495e;
+}
+.block-resultado{
+    margin: 0 auto;
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+    color: #4a4a4a;
+}
+.block-resultado h1{
+    font-size: 50px;
+}
+.block-resultado p{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+
+/*
+|------------------------------------------
+| Block - button
+|------------------------------------------
+*/
+.block__button{
+    width: 100%;
+    height: 140px;
+    border:none;
+    border-radius: 4px;
+    box-shadow: 0px 6px 0px #245b3b;
+    background-color: #27ae60;
+    font-size: 72px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+}
+.block__button:hover{
+    cursor: pointer;
+}
+.block__button-voltar{
+    margin-top: 25px;
+    width: 41px;
+    height: 73px;
+    margin-right: 40px;
+    background-image: url(../img/seta-esquerda.png);
+    background-color: transparent;
+    border: none;
+}
+.block__button-voltar:hover{
+    cursor: pointer;
+}
+
+
+/*
+|------------------------------------------
+| Block - label
+|------------------------------------------
+*/
+.block__label{
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.block__input{
+    margin-top: 20px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-size: 100px;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;    
+}
+::-webkit-input-placeholder{
+    color: rgba(255, 255, 255, 0.5);
+}
