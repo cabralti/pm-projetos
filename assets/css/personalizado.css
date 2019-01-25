@@ -109,7 +109,7 @@ p {
 #footer h3{
     text-shadow: 1px 1px 1px #000;
 }
-#footer h3, #footer address{
+#footer h3, #footer span{
     color: #fff;
 }
 
